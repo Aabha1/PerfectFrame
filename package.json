@@ -1,0 +1,42 @@
+{
+    "name": "amazon-clone",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "- HTML5 and CSS3: Semantic Elements, CSS Grid, Flexbox\r - JavaScript: ES6+, Array Functions, Rendering System\r - Node & Express: Web API, Body Parser, File Upload, JWT\r - MongoDB: Mongoose, Aggregation\r - Development: ESLint, Babel, Git, Github,\r - Deployment: Heroku\r - Watch React & Node Tutorial",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --experimental-modules --es-module-specifier-resolution=node backend/server.js",
+        "heroku-postbuild": "cd frontend && npm start"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.20.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.6.0",
+        "express": "^4.18.1",
+        "express-async-handler": "^1.2.0",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.13.14",
+        "nodemon": "^2.0.16"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.17.10",
+        "@babel/core": "^7.17.10",
+        "@babel/preset-env": "^7.17.10",
+        "@babel/preset-react": "^7.16.7",
+        "@typescript-eslint/eslint-plugin": "^5.23.0",
+        "@typescript-eslint/parser": "^5.23.0",
+        "eslint": "^8.15.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-react": "^7.29.4",
+        "eslint-plugin-react-hooks": "^4.5.0"
+    },
+    "engines": {
+        "node": "^16.15.0"
+    }
+}
