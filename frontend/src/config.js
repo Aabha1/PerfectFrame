@@ -1,1 +1,3 @@
-export const apiurl = 'http://localhost:5000';
+export const apiurl = document.location.href.startsWith('http://localhost') ?
+    'http://localhost:5000' :
+    '';
