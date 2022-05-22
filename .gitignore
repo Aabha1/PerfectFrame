@@ -1,5 +1,12 @@
+#depedencies
 node_modules/
 frontend/node_modules/
-frontend/main.js
 dist
 /dist
+
+#production
+/build
+
+frontend/main.js
+package-lock.json
+frontend/package-lock.json
