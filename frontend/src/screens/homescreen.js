@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable space-before-function-paren */
 /* eslint-disable no-underscore-dangle */
 import axios from 'axios';

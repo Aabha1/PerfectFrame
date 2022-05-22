@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import axios from 'axios';
 import { apiurl } from "./config"
 

@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import axios from "axios";
 import CartScreen from "./screens/cartscreen";
 import Error404Screen from "./screens/Error404screen";
