@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
+import path from 'path';
 import config from './config';
 import data from './data';
 import userRouter from './routes/userRouter';
@@ -38,12 +39,17 @@ app.get('/api/products/:id', (req, res) => {
     }
 });
 
+app.use(express.static(path.join(__dirname, '/../frontend')));
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '/../frontend/index.html'));
+});
+
 // eslint-disable-next-line no-unused-vars
 app.use((err, req, res, next) => {
     const status = err.name && err.name === 'ValidationError' ? 400 : 500;
     res.status(status).send({ message: err.message });
 });
 
-app.listen(5000, () => {
+app.listen(config.PORT, () => {
     console.log('serve at http://localhost:5000');
 });

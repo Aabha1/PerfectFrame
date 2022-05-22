@@ -1,13 +1,14 @@
 {
     "name": "amazon-clone",
     "version": "1.0.0",
-    "type": "module",
     "description": "- HTML5 and CSS3: Semantic Elements, CSS Grid, Flexbox\r - JavaScript: ES6+, Array Functions, Rendering System\r - Node & Express: Web API, Body Parser, File Upload, JWT\r - MongoDB: Mongoose, Aggregation\r - Development: ESLint, Babel, Git, Github,\r - Deployment: Heroku\r - Watch React & Node Tutorial",
     "main": "index.js",
     "scripts": {
         "start": "nodemon --experimental-modules --es-module-specifier-resolution=node backend/server.js",
-        "heroku-prebuild": "npm install",
-        "heroku-postbuild": "cd frontend && npm install && npm start"
+        "build": "del /s /q dist && babel backend -d dist",
+        "serve": "node dist/server.js",
+        "heroku-prebuild": "cd frontend && npm install --dev",
+        "heroku-postbuild": "npm run build && cd frontend && npm install && npm run build"
     },
     "author": "",
     "license": "ISC",
@@ -19,13 +20,14 @@
         "express-async-handler": "^1.2.0",
         "jsonwebtoken": "^8.5.1",
         "mongoose": "^5.13.14",
-        "nodemon": "^2.0.16"
+        "nodemon": "^2.0.16",
+        "path": "^0.12.7"
     },
     "devDependencies": {
-        "@babel/cli": "^7.17.10",
-        "@babel/core": "^7.17.10",
-        "@babel/preset-env": "^7.17.10",
-        "@babel/preset-react": "^7.16.7",
+        "@babel/cli": "^7.10.3",
+        "@babel/core": "^7.10.3",
+        "@babel/preset-env": "^7.10.3",
+        "@babel/preset-react": "^7.10.3",
         "@typescript-eslint/eslint-plugin": "^5.23.0",
         "@typescript-eslint/parser": "^5.23.0",
         "eslint": "^8.15.0",
@@ -38,6 +40,7 @@
         "eslint-plugin-react-hooks": "^4.5.0"
     },
     "engines": {
-        "node": "^16.15.0"
+        "node": "16.15.0",
+        "npm": "8.5.5"
     }
 }

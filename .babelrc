@@ -3,7 +3,7 @@
         [
             "@babel/preset-env",
             {
-               "tragets": {
+               "targets": {
                    "node" : "current"
                 }
             }
