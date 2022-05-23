@@ -5,7 +5,7 @@ const Header = {
         const { value } = parseRequestUrl();
         return `
         <div class="brand">
-          <a href="/#/">PERFECT FRAME</a>
+          <a href="https://perfect-frame-face.herokuapp.com/">PERFECT FRAME</a>
         </div>
         <div class="search">
             <form class="searchForm" id="searchForm">
