@@ -186,7 +186,7 @@ footer {
 
 /*product details*/
 
-.content a {
+.contentLink {
     margin: 0.5rem;
 }
 
@@ -244,6 +244,11 @@ footer {
     display: flex;
     flex-wrap: warp;
     align-items: flex-start;
+}
+
+.cartLink {
+    background-color: rgba(165, 179, 179, 0.6);
+    margin: 1rem;
 }
 
 .cartList {

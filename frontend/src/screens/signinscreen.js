@@ -33,7 +33,7 @@ const SigninScreen = {
                     </li>
                     <li>
                         <div>
-                        <a href="/#/"><i class="fa fa-circle-arrow-left"></i>Go to home screen</a>
+                        <a href="/#/">Go to home screen</a>
                         </div>
                     </li>
                 </ul>
