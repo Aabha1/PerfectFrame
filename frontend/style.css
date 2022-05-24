@@ -186,6 +186,10 @@ footer {
 
 /*product details*/
 
+.content a {
+    margin: 0.5rem;
+}
+
 .details {
     display: flex;
     justify-content: space-between;

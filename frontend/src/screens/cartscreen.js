@@ -68,8 +68,8 @@ const CartScreen = {
                 }
                 const cartItems = getCartItems();
                 return `
+                <a href="/#/"><i class="fa fa-circle-arrow-left"></i>Go to home screen</a>
                     <div class="content cart">
-                    <a href="/#/"><i class="fa-light fa-circle-arrow-left"></i>Go to home screen</a>
                         <div class="cartList">
                             <ul class="cartListContainer">
                                <li>

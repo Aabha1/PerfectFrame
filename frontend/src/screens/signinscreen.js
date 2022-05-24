@@ -9,7 +9,6 @@ const SigninScreen = {
     render: () => {
         return `
         <div class="formContainer">
-        <a href="/#/"><i class="fa-light fa-circle-arrow-left"></i>Go to home screen</a>
             <form id="signinForm">
                 <ul class="formItems">
                     <li>
@@ -30,6 +29,11 @@ const SigninScreen = {
                         <div>
                             New User?
                             <a href="/#/register">Create your account</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                        <a href="/#/"><i class="fa fa-circle-arrow-left"></i>Go to home screen</a>
                         </div>
                     </li>
                 </ul>
