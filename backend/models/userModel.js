@@ -1,3 +1,6 @@
+// mongoDB model for users
+// currently inactive because some bug in userRouter
+
 import mongoose from 'mongoose';
 
 const userSchema = new mongoose.Schema({

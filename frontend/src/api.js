@@ -1,10 +1,15 @@
 /* eslint-disable import/no-extraneous-dependencies */
+// code to create response to product being called individually
+
 import axios from 'axios';
 import { apiurl } from "./config"
 
+// getting product according to the id we recieve and solving it accordingly
 export const getProduct = async(id) => {
     try {
-        /* let queryString = '?';
+        /* 
+        I was trying to bluid search here but i failed so i commented it out for future reference
+        let queryString = '?';
         if (searchKeyword)
             queryString += `searchKeyword=${searchKeyword}&`;
          */

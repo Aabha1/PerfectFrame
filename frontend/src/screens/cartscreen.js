@@ -1,8 +1,11 @@
 /* eslint-disable no-use-before-define */
+// creating cart screen frontend and adding actions to the buttons in there
+
 import { getProduct } from "../api";
 import { getCartItems, setCartItems } from "../localStorage";
 import { parseRequestUrl, rerender } from "../utils";
 
+// when we add something to cart or update the number of product we want
 const addToCart = (item, forceUpdate = false) => {
     let cartItems = getCartItems();
     const existItem = cartItems.find(x => x.product === item.product);
@@ -19,6 +22,7 @@ const addToCart = (item, forceUpdate = false) => {
     }
 };
 
+// to remove something from cart on pressing delete button
 const removeFromCart = (id) => {
     setCartItems(getCartItems().filter((x) => x.product !== id));
     if (id === parseRequestUrl().id) {
@@ -29,6 +33,7 @@ const removeFromCart = (id) => {
 };
 
 const CartScreen = {
+        // implementing the actions on buttons 
         after_render: () => {
             const qtySelects = document.querySelectorAll('.qtySelect');
             Array.from(qtySelects).forEach((qtySelect) => {
@@ -47,6 +52,7 @@ const CartScreen = {
                 document.location.hash = '/signin';
             });
         },
+        // adding html to the screen for a product added to cart
         render: async() => {
                 const request = parseRequestUrl();
                 if (request.id) {

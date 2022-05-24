@@ -1,3 +1,6 @@
+// the main file in backend which serves the content to the website page
+// all necessary files are imported and directed for necesaary action from here
+
 import express from 'express';
 import cors from 'cors';
 import mongoose from 'mongoose';
@@ -7,6 +10,7 @@ import config from './config';
 import data from './data';
 import userRouter from './routes/userRouter';
 
+// for loading mongoose
 mongoose
     .connect(config.MONGODB_URL, {
         useNewUrlParser: true,
@@ -25,12 +29,12 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
+// for loading products
 app.use('/api/users', userRouter);
 app.get('/api/products', (req, res) => {
     res.send(data.products);
 });
 app.get('/api/products/:id', (req, res) => {
-    // eslint-disable-next-line no-underscore-dangle
     const product = data.products.find((x) => x._id === req.params.id);
     if (product) {
         res.send(product);
@@ -50,6 +54,7 @@ app.use((err, req, res, next) => {
     res.status(status).send({ message: err.message });
 });
 
+// to display dat on the website
 app.listen(config.PORT, () => {
     console.log('serve at http://localhost:5000');
 });

@@ -1,3 +1,6 @@
+// for loading rating attched to a particular product
+// accordinng to data stars are given and returned
+
 const rating = {
     render: (props) => {
         if (!props.value) {

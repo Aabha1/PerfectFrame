@@ -1,3 +1,6 @@
+// to load the contents header on the frontend
+// also contains the search form
+
 import { parseRequestUrl } from "../utils";
 
 const Header = {

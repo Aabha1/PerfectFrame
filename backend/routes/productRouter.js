@@ -1,6 +1,8 @@
+// router for products coming from productModel folder
+
 import express from 'express'
 import expressAsyncHandler from 'express-async-handler';
-import Product from './productModel';
+import Product from '../models/productModel';
 
 const productRouter = express.Router();
 productRouter.get(

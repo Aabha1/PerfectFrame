@@ -1,14 +1,14 @@
 /* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable space-before-function-paren */
-/* eslint-disable no-underscore-dangle */
+// home screen html and loading data from backend
+
 import axios from 'axios';
 import { apiurl } from '../config';
 import { parseRequestUrl } from '../utils';
-// import { parseRequestUrl } from '../utils';
-
 
 const HomeScreen = {
+    // created for some future work
     after_render: async() => '',
+    // rendering data from data.js from backend
     render: async() => {
         const response = await axios({
             url: `${apiurl}/api/products`,

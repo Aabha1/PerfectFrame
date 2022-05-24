@@ -1,4 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
+// most crucial file, all rendering after loading a window or on a hashchange takes place here
+// all other js files are called here
+
 import axios from "axios";
 import CartScreen from "./screens/cartscreen";
 import Error404Screen from "./screens/Error404screen";
@@ -11,6 +14,7 @@ import { apiurl } from "./config";
 
 const main = document.querySelector("#main-container");
 
+// getting the resquest which is made and rendering same screen which is asked
 const routes = {
     '/': HomeScreen,
     '/product/:id': ProductScreen,
@@ -19,10 +23,12 @@ const routes = {
     '/signin': SigninScreen,
 };
 const router = async() => {
+    // rendering header
     const header = document.querySelector('#header-container');
     header.innerHTML = Header.render();
     Header.after_render();
 
+    // rendering the main body of website
     const request = parseRequestUrl();
     const parseUrl = (request.resource ? `/${request.resource}` : '/') +
         (request.id ? '/:id' : '') +
@@ -30,17 +36,17 @@ const router = async() => {
 
     const screen = routes[parseUrl] ? routes[parseUrl] : Error404Screen;
 
-    console.log("rendering");
+    // displaying the main body of website
     main.innerHTML = await screen.render();
     await screen.after_render();
 
+    // implimenting search bar and searching according to age and gender
     const response = await axios({
         url: `${apiurl}/api/products`,
         headers: {
             'Content-Type': 'application/json',
         },
     });
-
     const products = response.data;
     const { show } = parseRequestUrl();
     document.querySelector("#searchForm").addEventListener('submit', (e) => {
@@ -49,7 +55,9 @@ const router = async() => {
         const searching = product => {
             const { value } = parseRequestUrl();
             if (product.category === value) {
-                console.log("found search");
+                return product;
+            }
+            if (product.description.indexOf(value) !== -1) {
                 return product;
             }
             return null;

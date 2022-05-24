@@ -1,3 +1,5 @@
+// making the request link split up and extracting useful information from it
+
 import rating from "./components/ratings";
 
 export const parseRequestUrl = () => {
@@ -16,6 +18,7 @@ export const parseRequestUrl = () => {
             verb: r[3],
             name: q[0],
             value: q[1],
+            // displaying the list of products which is passed as parameter
             show: products => `
         <ul class="products">
         ${products.map(

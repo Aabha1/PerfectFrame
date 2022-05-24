@@ -1,3 +1,6 @@
+// to generate tokens for new users and new products 
+// not yet implimented has some bug maybe
+
 import jwt from 'jsonwebtoken';
 import config from "./config";
 

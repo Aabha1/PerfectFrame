@@ -1,3 +1,5 @@
+// this contains some important environment variables which is used to bluid this project
+
 import dotenv from 'dotenv';
 
 dotenv.config();

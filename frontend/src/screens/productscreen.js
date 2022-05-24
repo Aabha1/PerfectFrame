@@ -1,14 +1,18 @@
+// html for each product when opened individually
+
 import { parseRequestUrl } from '../utils';
 import Rating from '../components/ratings';
 import { getProduct } from '../api'
 
 const ProductScreen = {
+        // creating actions for button present on screen
         after_render: () => {
             const request = parseRequestUrl();
             document.querySelector("#addButton").addEventListener('click', () => {
                 document.location.hash = `/cart/${request.id}`;
             })
         },
+        // creating html of product screen by rendering data from backend
         render: async() => {
                 const request = parseRequestUrl();
                 const product = await getProduct(request.id);

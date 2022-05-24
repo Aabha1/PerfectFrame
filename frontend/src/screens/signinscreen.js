@@ -1,6 +1,11 @@
 /* eslint-disable arrow-body-style */
+// creating html for signin screen for user
+// frontend is implimented but backend work is still left
+
 const SigninScreen = {
+    // left for future use
     after_render: () => {},
+    // html for frontend of screen
     render: () => {
         return `
         <div class="formContainer">

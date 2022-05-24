@@ -1,3 +1,5 @@
+// backend file that contains all the product data which is loaded dynamically to the screen
+
 export default {
     products: [{
             _id: '1',

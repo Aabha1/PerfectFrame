@@ -1,3 +1,5 @@
+// router for users who are registered by userModel
+
 import express from 'express';
 import expressAsyncHandler from 'express-async-handler';
 import User from '../models/userModel';
@@ -29,6 +31,7 @@ userRouter.post('/signin', expressAsyncHandler(async(req, res) => {
             message: 'Invalid Email or password',
         });
     } else {
+        // some bug in this else part
         res.send({
             _id: signinUser._id,
             name: signinUser.name,
