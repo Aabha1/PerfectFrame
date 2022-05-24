@@ -20,7 +20,9 @@ const ProductScreen = {
                     return (`<div>${product.error}</div>`)
                 }
                 return `
+                
         <div class='content'>
+        <a href="/#/"><i class="fa-light fa-circle-arrow-left"></i>Go to home screen</a>
           <div class='details'>
             <div class='detailsImage'>
                <img src='${product.image}' alt='${product.name}'>

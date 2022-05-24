@@ -9,6 +9,7 @@ const SigninScreen = {
     render: () => {
         return `
         <div class="formContainer">
+        <a href="/#/"><i class="fa-light fa-circle-arrow-left"></i>Go to home screen</a>
             <form id="signinForm">
                 <ul class="formItems">
                     <li>
