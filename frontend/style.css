@@ -316,7 +316,7 @@ footer {
 /*search*/
 
 .search {
-    width: 60rem;
+    width: 40%;
 }
 
 .searchForm input[type='text'] {

@@ -11,7 +11,7 @@ export default {
             rating: 4.7,
             numReviews: 15,
             countInStock: 10,
-            description: 'Pink dress with lots of white flowers. Piping done with royal blue. It also have Angel Sleeves(elbow length).'
+            description: 'Pink frock with lots of white flowers. Piping done with royal blue. It also have Angel Sleeves(elbow length).'
         },
         {
             _id: '2',
@@ -87,7 +87,7 @@ export default {
         },
         {
             _id: '8',
-            name: 'Printed TShirt',
+            name: 'Printed T-Shirt',
             category: 'YoungMan',
             image: '/image/product-8.jpg',
             price: 790,
@@ -95,7 +95,7 @@ export default {
             rating: 4.7,
             numReviews: 13,
             countInStock: 10,
-            description: 'white printed TShirt with round neckline. Skull design with other elements.'
+            description: 'White printed T-Shirt with round neckline. Skull design with other elements.'
         },
         {
             _id: '9',
@@ -107,7 +107,7 @@ export default {
             rating: 4.2,
             numReviews: 18,
             countInStock: 17,
-            description: 'Neostreak silm fit stretchable jeans. Yellow base with brown checks on it.'
+            description: 'Neostreak silm fit stretchable jeans or pants. Yellow base with brown checks on it.'
         },
         {
             _id: '10',
@@ -143,7 +143,7 @@ export default {
             rating: 4.2,
             numReviews: 8,
             countInStock: 10,
-            description: 'Tartan Plaid boys dress shirt. Chic red with blue checks over it. Best fit with jeans.'
+            description: 'Tartan Plaid boys shirt. Chic red with blue checks over it. Best fit with jeans.'
         },
         {
             _id: '13',
@@ -179,7 +179,7 @@ export default {
             rating: 2.4,
             numReviews: 15,
             countInStock: 23,
-            description: 'Polka dot half and half Georgette Saree. Contrasting black and yellow for vibrant design.'
+            description: 'Polka dot half and half Georgette saree. Contrasting black and yellow for vibrant design.'
         },
         {
             _id: '16',
@@ -239,7 +239,7 @@ export default {
             rating: 4,
             numReviews: 21,
             countInStock: 21,
-            description: 'Demin short jeans light blue. Waist-line and ripped at bottom.'
+            description: 'Demin short jeans or pants light blue. Waist-line and ripped at bottom.'
         },
         {
             _id: '21',
