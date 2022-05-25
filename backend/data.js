@@ -75,7 +75,7 @@ export default {
         },
         {
             _id: '7',
-            name: 'Fit Slim TShirt',
+            name: 'Fit Slim T-Shirt',
             category: 'YoungMan',
             image: '/image/product-7.jfif',
             price: 650,
@@ -83,7 +83,7 @@ export default {
             rating: 3.7,
             numReviews: 20,
             countInStock: 9,
-            description: 'Slim fit TShirt with solid grey color. Round neckline and fine fabric.'
+            description: 'Slim fit T-Shirt with solid grey color. Round neckline and fine fabric.'
         },
         {
             _id: '8',
@@ -131,7 +131,7 @@ export default {
             rating: 3,
             numReviews: 60,
             countInStock: 13,
-            description: 'Casual Clothes for boy. Letter printed Hoodie for winters in black and olive green.'
+            description: 'Casual Clothes for toddler boy. Letter printed Hoodie for winters in black and olive green.'
         },
         {
             _id: '12',
@@ -143,7 +143,7 @@ export default {
             rating: 4.2,
             numReviews: 8,
             countInStock: 10,
-            description: 'Tartan Plaid boys shirt. Chic red with blue checks over it. Best fit with jeans.'
+            description: 'Tartan Plaid toddler boys shirt. Chic red with blue checks over it. Best fit with jeans.'
         },
         {
             _id: '13',
@@ -287,7 +287,7 @@ export default {
             rating: 4.8,
             numReviews: 78,
             countInStock: 20,
-            description: 'Children demin dungary for boys. Blue slim leg with vintage texure.'
+            description: 'Children demin dungary for toddler boys. Blue slim leg with vintage texure.'
         },
         {
             _id: '25',
@@ -299,7 +299,7 @@ export default {
             rating: 3,
             numReviews: 21,
             countInStock: 7,
-            description: 'Belly summer crop top and shirt for girls. Sleeveless and neckless attached. Cool blue in color.'
+            description: 'Belly summer crop top and stirk for girls. Sleeveless and neckless attached. Cool blue in color.'
         },
     ],
 };
