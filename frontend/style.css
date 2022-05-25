@@ -247,11 +247,6 @@ footer {
     align-items: flex-start;
 }
 
-.cartLink {
-    background-color: rgba(165, 179, 179, 0.6);
-    margin: 1rem;
-}
-
 .cartList {
     flex: 3 1 60rem;
 }

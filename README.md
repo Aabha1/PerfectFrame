@@ -2,7 +2,7 @@
 
 ## About
 
-Part 1 of the project has some sample pictures. On submitting any image to it, the link is directed to Part 2. The search bar has some keywords already written in it, you just need to click on "my type". Then you will be shown the required result. You can click on product to open it's details and you can also add to cart. The website is responsive and can be supported on all the devices. The sign in screen is made from frontend but there is some problem in backend so functions have been disabled. The brand name used is an anchor tag that connects the 1st part of the project to it. Currently I am trying to learn MongoDB to make this project more better and add more features to it.
+Part 1 of the project has some sample pictures. On submitting any image to it, the link is directed to Part 2. The search bar has some keywords already written in it, you just need to click on "my type". Then you will be shown the required result. You can click on product to open it's details and you can also add to cart. The website is not responsive on smaller screens and can be supported on all the desktops and larger screens. The sign in screen is made from frontend but there is some problem in backend so functions have been disabled. The brand name used is an anchor tag that connects the 1st part of the project to it. Currently I am trying to learn MongoDB to make this project more better and add more features to it.
 
 ## Hosted on
 

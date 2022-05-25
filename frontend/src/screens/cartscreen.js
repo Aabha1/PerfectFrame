@@ -68,9 +68,6 @@ const CartScreen = {
                 }
                 const cartItems = getCartItems();
                 return `
-                <div class="cartLink">
-                <a href="/#/"><i class="fa fa-angle-double-left"></i>Go to home screen</a>
-                </div>
                     <div class="content cart">
                         <div class="cartList">
                             <ul class="cartListContainer">
