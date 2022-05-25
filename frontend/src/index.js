@@ -47,6 +47,8 @@ const router = async() => {
             'Content-Type': 'application/json',
         },
     });
+
+    // for searching bar we load products and sort them
     const products = response.data;
     const { show } = parseRequestUrl();
     document.querySelector("#searchForm").addEventListener('submit', (e) => {
@@ -63,6 +65,7 @@ const router = async() => {
             return null;
         }
         const newProducts = products.filter(searching);
+
         if (newProducts.length === 0) {
             main.innerHTML = `<div class="notFound">
                                 Sorry! We can not regonise your age or gender.

@@ -43,7 +43,7 @@ $ npm start
 
 ## Details
 
-This project is a normal e-commerce website with Home Screen, Product Screen and Cart Screen fully implimented and functional. Sign in and resgister screen still have some work left in it. The search bar is made but works by submitting two times currently. The product images have been selected randomly from google. All data can be found in data.js which I have created with some products in it.
+This project is a normal e-commerce website with Home Screen, Product Screen and Cart Screen fully implimented and functional. Sign in and resgister screen still have some work left in it. The search bar is made but works by submitting two times currently. The product images have been selected randomly from google. All data can be found in data.js which I have created with some products in it. Only node_modules is being imported. All html, CSS and javascript file is created by me.
 
 ### Reference to Part 1:
 
