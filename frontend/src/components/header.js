@@ -17,13 +17,14 @@ const Header = {
             </form>
         </div>
         <div>
+        <a class="links" href='/#/'>home</a>
             <a class="links" href="/#/signin">Sign-In</a>
             <a class="links" href="/#/cart">Cart</a>
         </div>
         `;
     },
     after_render: () => {
-        document.querySelector('#searchForm').addEventListener('submit', async(e) => {
+        document.querySelector('#searchForm').addEventListener('submit', async (e) => {
             e.preventDefault();
             const searchKeyword = document.querySelector('#q').value;
             document.location.hash = `/?q=${searchKeyword}`;
